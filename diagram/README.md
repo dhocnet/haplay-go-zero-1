@@ -32,7 +32,7 @@ Pengerjaan HaPlay GO Zero 1 memerlukan persiapan dan bahan sebagai berikut.
 - 1x MicroSD 32GB
 - 1x Lem Araldite
 
-## Diagram Panel Bawah
+## Diagram Pengkabelan
 HaPlay GO Zero 1 di rakit menggunakan modul elektronika yang sederhana, yang pada intinya, modul-modul tersebut hanya bekerja untuk menangani daya.
 
 Berikut ini adalah diagram jalur pengkabelan HaPlay GO Zero 1.
@@ -46,3 +46,23 @@ Setelah dirakit, panel bagian depan terlihat seperti ini.
 Sedangkan panel bagian belakang terlihat seperti ini.
 
 ![HaPlay GO Zero 1 Panel Belakang](./HaPlay_GO_Zero_1-panel_belakang.jpg)
+
+## Catatan Modul Charging
+HaPlay GO Zero 1 menggunakan modul charging TP4056 yang terintegrasi dengan modul micro step-up, sehingga arus keluaran harus di atur manual.
+
+Untuk mengatur arus keluaran, putar potensiometer lalu periksa menggunakan AVO meter sampai mendapatkan nilai 4.2V.
+
+![TP4056 Step-Up](./tp4056-step-up.jpeg)
+
+## Bypass Baterai
+HaPlay GO Zero 1 menggunakan baterai eksternal yang di isi dan diatur oleh modul mandiri, sehingga pin baterai, harus di bypass agar dapat menerima daya dari luar.
+
+Bypass baterai dilakukan dengan satu Resistor bernilai 1K ohm yang di solder pada pin **GND**, **Temp** dan **BSI**.
+
+![HaPlay GO Zero 1 Battery MOD](./HaPlay_GO_Zero_1-battery_mod.jpg)
+
+## Keyboard MOD
+HaPlay GO Zero 1 menggunakan keyboard bluetooth tanpa dongle yang dimodifikasi agar dapat menerima masukan daya sebesar 5V.
+
+Modifikasi keyboard diadopsi dari proyek [Decktility](https://github.com/ByteWelder/Decktility) oleh [Byte Welder](https://github.com/ByteWelder). Lihat modifikasinya disini: [Decktility Keyboard Mod](https://github.com/ByteWelder/Decktility/blob/main/docs/assembling.md#keyboard-mod)
+
