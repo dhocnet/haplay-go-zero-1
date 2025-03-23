@@ -33,3 +33,16 @@ Pengerjaan HaPlay GO Zero 1 memerlukan persiapan dan bahan sebagai berikut.
 - 1x Lem Araldite
 
 ## Diagram Panel Bawah
+HaPlay GO Zero 1 di rakit menggunakan modul elektronika yang sederhana, yang pada intinya, modul-modul tersebut hanya bekerja untuk menangani daya.
+
+Berikut ini adalah diagram jalur pengkabelan HaPlay GO Zero 1.
+
+![Diagram HaPlay GO Zero 1](./HaPlay_GO_Zero_1-diagram.png)
+
+Setelah dirakit, panel bagian depan terlihat seperti ini.
+
+![HaPlay GO Zero 1 Panel Depan](./HaPlay_GO_Zero_1-panel_depan.jpg)
+
+Sedangkan panel bagian belakang terlihat seperti ini.
+
+![HaPlay GO Zero 1 Panel Belakang](./HaPlay_GO_Zero_1-panel_belakang.jpg)
