@@ -52,7 +52,7 @@ HaPlay GO Zero 1 menggunakan modul charging TP4056 yang terintegrasi dengan modu
 
 Untuk mengatur arus keluaran, putar potensiometer lalu periksa menggunakan AVO meter sampai mendapatkan nilai 4.2V.
 
-![TP4056 Step-Up](./tp4056-step-up.jpeg)
+![TP4056 Step-Up](./tp4056_step-up.jpeg)
 
 ## Bypass Baterai
 HaPlay GO Zero 1 menggunakan baterai eksternal yang di isi dan diatur oleh modul mandiri, sehingga pin baterai, harus di bypass agar dapat menerima daya dari luar.
@@ -66,3 +66,15 @@ HaPlay GO Zero 1 menggunakan keyboard bluetooth tanpa dongle yang dimodifikasi a
 
 Modifikasi keyboard diadopsi dari proyek [Decktility](https://github.com/ByteWelder/Decktility) oleh [Byte Welder](https://github.com/ByteWelder). Lihat modifikasinya disini: [Decktility Keyboard Mod](https://github.com/ByteWelder/Decktility/blob/main/docs/assembling.md#keyboard-mod)
 
+## Casing
+Casing HaPlay GO Zero 1 dicetak melalui jasa print 3D online yang banyak tersedia di platform online shop dengan pengaturan sebagai berikut:
+
+- Layer 0.2
+- Bahan ABS
+
+# Beli HaPlay GO Zero 1
+Jika proses merakit HaPlay GO Zero 1 terasa rumit, kamu bisa membelinya langsung dari [DHOCNET Store](https://dhocnet.work/search?label=Produk) atau [DHOCNET Store Tokopedia](https://tokopedia.com/dhocnet).
+
+Dengan membeli produk [HaPlay Computer](https://dhocnet.work/p/haplay.html), berarti kamu telah membantu tim kecil kami mendapat dana untuk biaya pengembangan dan sekaligus kamu juga telah turut berpartisipasi dalam proyek *Reuse & Recycle*.
+
+- CATATAN: Pembelian melalui Tokopedia dikenakan biaya layanan sebesar 12% dari harga barang.
