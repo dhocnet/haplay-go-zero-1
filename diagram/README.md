@@ -66,6 +66,13 @@ HaPlay GO Zero 1 menggunakan keyboard bluetooth tanpa dongle yang dimodifikasi a
 
 Modifikasi keyboard diadopsi dari proyek [Decktility](https://github.com/ByteWelder/Decktility) oleh [Byte Welder](https://github.com/ByteWelder). Lihat modifikasinya disini: [Decktility Keyboard Mod](https://github.com/ByteWelder/Decktility/blob/main/docs/assembling.md#keyboard-mod)
 
+## Keyboard Remaping
+HaPlay GO Zero 1 menggunakan keyboard yang tidak memiliki tombol ```TAB``` khusus, dimana tombol ```TAB``` ini sangat penting untuk mengoperasikan sistem operasi Linux yang digunakan pada HaPlay GO Zero 1, terutama bagi pengguna perintah baris.
+
+Karena itulah, HaPlay GO Zero 1 melakukan remap keyboard dengan merubah fungsi ```Caps Lock``` menjadi fungsi ```TAB```.
+
+Keyboard remap ini diadopsi dari proyek [Micro 2](https://yarh.io/yarh-io-m2.html) oleh [YARH IO](https://yarh.io).
+
 ## Casing
 Casing HaPlay GO Zero 1 dicetak melalui jasa print 3D online yang banyak tersedia di platform online shop dengan pengaturan sebagai berikut:
 
