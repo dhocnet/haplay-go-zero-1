@@ -72,9 +72,13 @@ Casing HaPlay GO Zero 1 dicetak melalui jasa print 3D online yang banyak tersedi
 - Layer 0.2
 - Bahan ABS
 
+[Download disain 3D](../stl)
+
+- CATATAN: Terdapat cacat pada disain 3D yang saya buat. Yaitu, lubang jack 3.5mm untuk output audio tidak simetris. Jika ingin menggunakannya, kamu bisa perbaiki ini sebelum dicetak.
+
 # Beli HaPlay GO Zero 1
 Jika proses merakit HaPlay GO Zero 1 terasa rumit, kamu bisa membelinya langsung dari [DHOCNET Store](https://dhocnet.work/search?label=Produk) atau [DHOCNET Store Tokopedia](https://tokopedia.com/dhocnet).
 
-Dengan membeli produk [HaPlay Computer](https://dhocnet.work/p/haplay.html), berarti kamu telah membantu tim kecil kami mendapat dana untuk biaya pengembangan dan sekaligus kamu juga telah turut berpartisipasi dalam proyek *Reuse & Recycle*.
+Dengan membeli produk [HaPlay Computer](https://dhocnet.work/p/haplay.html), berarti kamu telah membantu tim kecil kami mendapat dana untuk biaya pengembangan dan sekaligus kamu juga telah turut berpartisipasi dalam proyek *Reuse & Recycle* untuk menggunakan elektronik konsumen lebih lama guna mengurangi bertambahnya sampah elektronik, terutama yang berjenis smartphone.
 
 - CATATAN: Pembelian melalui Tokopedia dikenakan biaya layanan sebesar 12% dari harga barang.
