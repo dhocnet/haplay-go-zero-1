@@ -189,10 +189,12 @@ Format MicroSD:
 
 Mount partisi **userdata** dan MicroSD:
 
-``~# mkdir /mnt/usrfs
+~~~
+~# mkdir /mnt/usrfs
 ~# mkdir /mnt/homefs
 ~# mount /dev/mmvblk0p30 /mnt/usrfs
-~# mount /dev/mmcblk1p1 /mnt/homefs``
+~# mount /dev/mmcblk1p1 /mnt/homefs
+~~~
 
 Salin semua berkas dari direktori `/usr` kedalam partisi **userdata**:
 
@@ -212,9 +214,11 @@ Format raw disk image **varfs** yang baru dibuat:
 
 Mount disk image **varfs** lalu salin isi direktori `/var` kedalamnya:
 
-``~# mkdir /mnt/varfs
+~~~
+~# mkdir /mnt/varfs
 ~# mount /mnt/homefs/varfs /mnt/varfs
-~# cp -av /var/* /mnt/varfs/``
+~# cp -av /var/* /mnt/varfs/
+~~~
 
 Edit file `/etc/fstab`:
 
