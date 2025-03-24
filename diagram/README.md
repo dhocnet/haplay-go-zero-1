@@ -240,6 +240,24 @@ Setelah menyala kembali, login lalu jalankan perintah:
 
 Jika pada umpan baliknya kamu melihat dua `loop` di awal baris bawah, maka pengaturan yang dilakukan telah berhasil dan saatnya untuk memasang lingkungan desktop.
 
+### Memasang Lingkungan Desktop GUI
+Setelah semua pengaturan berjalan dengan baik, selanjutnya adalah memasang lingkungan desktop. Pada HaPlay GO Zero 1, awalnya, desktop yang digunakan adalah KDE Plasma Desktop. Namun karena KDE Plasma Desktop mengalami lag meski cukup lancar, namun hal tersebut membuat kesan jika HaPlay GO Zero 1 lambat saat dioperasikan.
+
+Jadi, sekarang, HaPlay GO Zero 1 mengganti default desktopnya dengan XFCE4.
+
+Instalasinya bisa dilakukan dengan perintah berikut:
+
+```
+~$ sudo apk add postmarketos-ui-xfce4 \
+xfce4-notifyd xfce4-pulseaudio-plugin \
+xfce4-terminal thunar pavucontrol gvfs \
+udiskie udisks2 xarchiver 7zip network-manager-applet
+```
+
+Setelah pemasangan desktop XFCE4, bersihkan cache lalu restart.
+
+`~$ sudo apk cache clean && reboot`
+
 # Beli HaPlay GO Zero 1
 Jika proses merakit HaPlay GO Zero 1 terasa rumit, kamu bisa membelinya langsung dari [DHOCNET Store](https://dhocnet.work/search?label=Produk) atau [DHOCNET Store Tokopedia](https://tokopedia.com/dhocnet).
 
