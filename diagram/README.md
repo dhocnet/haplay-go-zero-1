@@ -155,17 +155,9 @@ Kemudian login sebagai root:
 
 `~$ sudo su`
 
-Jalankan service **networkmanager**:
+Atur agar **Network Manager** berjalan saat boot:
 
-`~# service networkmanager start`
-
-Hubungkan ke jaringan Wifi:
-
-`~# nmtui-connect`
-
-Update dan upgrade paket:
-
-`~# apk update && apk upgrade`
+`~# rc-update add networkmanager default`
 
 ### Menyiapkan Partisi
 **!!! PERINGATAN !!!**
@@ -248,7 +240,15 @@ Setelah semua pengaturan berjalan dengan baik, selanjutnya adalah memasang lingk
 
 Jadi, sekarang, HaPlay GO Zero 1 mengganti default desktopnya dengan XFCE4.
 
-Instalasinya bisa dilakukan dengan perintah berikut:
+Hubungkan HaPlay GO Zero 1 ke jaringan:
+
+`~$ sudo nmtui-connect`
+
+Update dan upgrade paket dulu:
+
+`~$ sudo apk update && sudo apk upgrade`
+
+Install XFCE4:
 
 ```
 ~$ sudo apk add postmarketos-ui-xfce4 \
