@@ -89,7 +89,7 @@ HaPlay GO Zero 1 menggunakan sistem operasi [PostmarketOS Linux](https://postmar
 Pada proses ini diperlukan sebuah komputer Linux dan pengetahuan mendalam tentang sistem operasi Linux dan management disk agar tidak terjadi masalah.
 
 * **INFO**: *Saya menggunakan sistem operasi Debian Linux untuk membangun image PostmarketOS Linux. Jika Kamu menggunakan distro berbeda, silahkan disesuaikan*
-* **CATATAN**:*Pemasangan PostmarketOS Linux pada HaPlay GO Zero 1 dilakukan sebelum semua bagian di rakit.*
+* **CATATAN**: *Pemasangan PostmarketOS Linux pada HaPlay GO Zero 1 dilakukan sebelum semua bagian di rakit.*
 
 ### Pembentukan PostmarketOS
 Dari terminal emulator, pasang program pembentuk image PostmarketOS dengan perintah:
@@ -149,7 +149,7 @@ Kemudian restart smartphone dan biarkan masuk ke sistem.
 Setelah smartphone berhasil menjalankan PostmarketOS Linux dalam mode teks, login dengan informasi yang diatur sebelumnya saat pembentukan image.
 
 * Username: haplay
-* Password: <*masukan sandi yang diatur disini*>
+* Password: <*masukan sandi yang diatur tadi*>
 
 Kemudian login sebagai root:
 
@@ -169,6 +169,7 @@ Update dan upgrade paket:
 
 ### Menyiapkan Partisi
 **!!! PERINGATAN !!!**
+
 *BERIKUT INI ADALAH LANGKAH YANG PENTING DAPAT MENYEBABKAN KERUSAKAN SOFTWARE JIKA SALAH LANGKAH*
 
 Pada langkah ini, kita akan menggabung MicroSD sebagai partisi sistem dan mengatur lingkungan desktop. Jadi pastikan jika MicroSD sudah terpasang di tempatnya.
@@ -226,9 +227,11 @@ Edit file `/etc/fstab`:
 
 Lalu tambah baris seperti ini:
 
-`/dev/mmcblk1p1 /home ext4 defaults 0 0`
-`/dev/mmcblk0p30 /usr ext4 defaults 0 0`
-`/home/varfs /var extr defaults 0 0`
+```
+/dev/mmcblk1p1 /home ext4 defaults 0 0
+/dev/mmcblk0p30 /usr ext4 defaults 0 0
+/home/varfs /var extr defaults 0 0
+```
 
 Simpan dengan menekan tombol `CTRL` + `O` lalu `CTRL` + `X` dan restart.
 
@@ -251,7 +254,8 @@ Instalasinya bisa dilakukan dengan perintah berikut:
 ~$ sudo apk add postmarketos-ui-xfce4 \
 xfce4-notifyd xfce4-pulseaudio-plugin \
 xfce4-terminal thunar pavucontrol gvfs \
-udiskie udisks2 xarchiver 7zip network-manager-applet
+udiskie udisks2 xarchiver 7zip \
+network-manager-applet
 ```
 
 Setelah pemasangan desktop XFCE4, bersihkan cache lalu restart.
