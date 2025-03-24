@@ -170,7 +170,7 @@ Update dan upgrade paket:
 ### Menyiapkan Partisi
 **!!! PERINGATAN !!!**
 
-*BERIKUT INI ADALAH LANGKAH YANG PENTING DAPAT MENYEBABKAN KERUSAKAN SOFTWARE JIKA SALAH LANGKAH*
+*BERIKUT INI ADALAH LANGKAH YANG PENTING DAN DAPAT MENYEBABKAN KERUSAKAN SOFTWARE JIKA TRRJADI SALAH PROSEDUR*
 
 Pada langkah ini, kita akan menggabung MicroSD sebagai partisi sistem dan mengatur lingkungan desktop. Jadi pastikan jika MicroSD sudah terpasang di tempatnya.
 
