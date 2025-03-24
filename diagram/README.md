@@ -230,7 +230,7 @@ Lalu tambah baris seperti ini:
 ```
 /dev/mmcblk1p1 /home ext4 defaults 0 0
 /dev/mmcblk0p30 /usr ext4 defaults 0 0
-/home/varfs /var extr defaults 0 0
+/home/varfs /var ext4 defaults 0 0
 ```
 
 Simpan dengan menekan tombol `CTRL` + `O` lalu `CTRL` + `X` dan restart.
