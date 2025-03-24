@@ -6,6 +6,8 @@ Juga, sedikit keahlian dalam menggunakan sistem operasi Linux sangat diperlukan 
 ## Persiapan dan Bahan
 Pengerjaan HaPlay GO Zero 1 memerlukan persiapan dan bahan sebagai berikut.
 
+* **INFO**: *Setiap pembelian yang kamu lakukan melalui link di bawah ini, kami akan mendapat sedikit, sangat sedikit komisi yang akan digunakan untuk biaya pengembangan selanjutnya.*
+
 ### Peralatan
 - [1x Solder](https://s.shopee.co.id/60Dj735rdw)
 - [1x Obeng Kecil](https://s.shopee.co.id/5fasiUem6q)
