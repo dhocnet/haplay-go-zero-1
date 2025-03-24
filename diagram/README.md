@@ -31,6 +31,8 @@ Pengerjaan HaPlay GO Zero 1 memerlukan persiapan dan bahan sebagai berikut.
 - 1x Resistor 1K Ω
 - 1x MicroSD 32GB
 - 1x Lem Araldite
+- 1x Glue Gun
+- 1x Xiaomi Redmi 2 Prime
 
 ## Diagram Pengkabelan
 HaPlay GO Zero 1 di rakit menggunakan modul elektronika yang sederhana, yang pada intinya, modul-modul tersebut hanya bekerja untuk menangani daya.
