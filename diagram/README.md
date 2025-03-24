@@ -83,6 +83,72 @@ Casing HaPlay GO Zero 1 dicetak melalui jasa print 3D online yang banyak tersedi
 
 - CATATAN: Terdapat cacat pada disain 3D yang saya buat. Yaitu, lubang jack 3.5mm untuk output audio tidak simetris. Jika ingin menggunakannya, kamu bisa perbaiki ini sebelum dicetak.
 
+## Menyiapkan Sistem Operasi
+HaPlay GO Zero 1 menggunakan sistem operasi [PostmarketOS Linux](https://postmarketos.org) sebagai pengganti [Android OS](https://android.com) dengan konfigurasi dan pemasangan khusus.
+
+Pada proses ini diperlukan sebuah komputer Linux dan pengetahuan mendalam tentang sistem operasi Linux dan management disk agar tidak terjadi masalah.
+
+* **INFO**: *Saya menggunakan sistem operasi Debian Linux untuk membangun image PostmarketOS Linux. Jika Kamu menggunakan distro berbeda, silahkan disesuaikan*
+* **CATATAN**:*Pemasangan PostmarketOS Linux pada HaPlay GO Zero 1 dilakukan sebelum semua bagian di rakit.*
+
+### Pembentukan PostmarketOS
+Dari terminal emulator, pasang program pembentuk image PostmarketOS dengan perintah:
+
+`~$ sudo apt install pmbootstrap android-tools-fastboot`
+
+Kemudian inisialisasi perangkat dengan perintah:
+
+`~$ pmbootstrap init`
+
+Isi beberapa nilai seperti ini:
+* **Versi**: v24.06
+* **Brand**: Xiaomi
+* **Model**: wt88047
+* **GUI**: none
+* **Paket Extra**: nano,networkmanager,networkmanager-tui,networkmanager-wifi,networkmanager-wwan
+* **Username**: haplay
+* **Host**: go-zero
+
+Setelah initialisasi, bentuk semua paket menjadi image siap pasang dengan perintah:
+
+`~$ pmbootstrap install`
+
+* Masukan sandi sudo pada permintaan pertama.
+* Masukan sandi baru untuk user *haplay* pada permintaan kedua.
+
+Dengan konfigurasi ini, image PostmarketOS yang dihasilkan akan berukuran sangat kecil. Tidak lebih dari 200MB.
+
+### Instalasi PostmarketOS Linux
+* **CATATAN**: *Untuk kelancaran pemasangan sistem operasi PostmarketOS Linux, diperlukan pengetahuan yang cukup mendalam mengenai flashing pada smartphone Android.*
+
+Masuk ke mode fastboot dengan menekan tombol kombinasi Volume (-) dan tombol Power secara bersamaan. Kemudian hubungkan smartphone ke komputer melalui kabel data USB.
+
+Beralih ke komputer, periksa status hubungan dengan perintah:
+
+`~$ fastboot devices`
+
+Jika umpan balik tidak kosong, lanjutkan dengan menjalankan perintah:
+
+`~$ pmbootstrap flasher flash_lk2nd`
+
+Kemudian restart smartphone:
+
+`~$ fastboot reboot`
+
+Saat restart, smartphone akan bergetar dua kali dengan jeda pendek. Tekan tombol volume (-) setelah getar pertama untuk masuk ke mode fastboot LK2ND.
+
+Dari mode fastboot LK2ND, dan smartphone masih terhubung ke komputer, jalankan perintah pemasangan PostmarketOS Linux:
+
+`~$ pmbootstrap flasher flash_rootfs --partition system`
+
+Kemudian restart smartphone dan biarkan masuk ke sistem.
+
+`~$ fastboot reboot`
+
+### Setup OS
+
+** SEDANG DISUSUN **
+
 # Beli HaPlay GO Zero 1
 Jika proses merakit HaPlay GO Zero 1 terasa rumit, kamu bisa membelinya langsung dari [DHOCNET Store](https://dhocnet.work/search?label=Produk) atau [DHOCNET Store Tokopedia](https://tokopedia.com/dhocnet).
 
