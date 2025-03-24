@@ -145,9 +145,96 @@ Kemudian restart smartphone dan biarkan masuk ke sistem.
 
 `~$ fastboot reboot`
 
-### Setup OS
+### Menyiapkan Sistem Operasi
+Setelah smartphone berhasil menjalankan PostmarketOS Linux dalam mode teks, login dengan informasi yang diatur sebelumnya saat pembentukan image.
 
-** SEDANG DISUSUN **
+* Username: haplay
+* Password: <*masukan sandi yang diatur disini*>
+
+Kemudian login sebagai root:
+
+`~$ sudo su`
+
+Jalankan service **networkmanager**:
+
+`~# service networkmanager start`
+
+Hubungkan ke jaringan Wifi:
+
+`~# nmtui-connect`
+
+Update dan upgrade paket:
+
+`~# apk update && apk upgrade`
+
+### Menyiapkan Partisi
+**!!! PERINGATAN !!!**
+*BERIKUT INI ADALAH LANGKAH YANG PENTING DAPAT MENYEBABKAN KERUSAKAN SOFTWARE JIKA SALAH LANGKAH*
+
+Pada langkah ini, kita akan menggabung MicroSD sebagai partisi sistem dan mengatur lingkungan desktop. Jadi pastikan jika MicroSD sudah terpasang di tempatnya.
+
+Periksa daftar partisi yang ada:
+
+`~# parted -l`
+
+Temukan partisi dengan nama `userdata` lalu catat nomor di depannya. Katakanlah partisi tersebut bernomor **30**.
+
+Format partisi *userdata*:
+
+`~# mkfs.ext4 -L USRFS /dev/mmcblk0p30`
+
+Format MicroSD:
+
+`~# mkfs.ext4 -L HOMEFS /dev/mmcblk1p1`
+
+Mount partisi **userdata** dan MicroSD:
+
+`~# mkdir /mnt/usrfs`
+`~# mkdir /mnt/homefs`
+`~# mount /dev/mmvblk0p30 /mnt/usrfs`
+`~# mount /dev/mmcblk1p1 /mnt/homefs`
+
+Salin semua berkas dari direktori `/usr` kedalam partisi **userdata**:
+
+`~# cp -av /usr/* /mnt/usrfs/`
+
+Salin semua berkas dari direktori `/home` kedalam MicroSD:
+
+`~# cp -av /home/* /mnt/homefs/`
+
+Buat raw disk image sebesar 10GB di dalam MicroSD:
+
+`~# dd if=/dev/zero of=/mnt/homefs/varfs bs=1MB count=10000`
+
+Format raw disk image **varfs** yang baru dibuat:
+
+`~# mkfs.ext4 -L VARFS /mnt/homefs/varfs`
+
+Mount disk image **varfs** lalu salin isi direktori `/var` kedalamnya:
+
+`~# mkdir /mnt/varfs`
+`~# mount /mnt/homefs/varfs /mnt/varfs`
+`~# cp -av /var/* /mnt/varfs/`
+
+Edit file `/etc/fstab`:
+
+`~# nano /etc/fstab`
+
+Lalu tambah baris seperti ini:
+
+`/dev/mmcblk1p1 /home ext4 defaults 0 0`
+`/dev/mmcblk0p30 /usr ext4 defaults 0 0`
+`/home/varfs /var extr defaults 0 0`
+
+Simpan dengan menekan tombol `CTRL` + `O` lalu `CTRL` + `X` dan restart.
+
+`~# reboot`
+
+Setelah menyala kembali, login lalu jalankan perintah:
+
+`~$ df -h`
+
+Jika pada umpan baliknya kamu melihat dua `loop` di awal baris bawah, maka pengaturan yang dilakukan telah berhasil dan saatnya untuk memasang lingkungan desktop.
 
 # Beli HaPlay GO Zero 1
 Jika proses merakit HaPlay GO Zero 1 terasa rumit, kamu bisa membelinya langsung dari [DHOCNET Store](https://dhocnet.work/search?label=Produk) atau [DHOCNET Store Tokopedia](https://tokopedia.com/dhocnet).
