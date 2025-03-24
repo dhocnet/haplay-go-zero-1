@@ -7,32 +7,32 @@ Juga, sedikit keahlian dalam menggunakan sistem operasi Linux sangat diperlukan 
 Pengerjaan HaPlay GO Zero 1 memerlukan persiapan dan bahan sebagai berikut.
 
 ### Peralatan
-- 1x Solder
-- 1x Obeng Kecil
-- 1x Avo Meter
-- 1x Pinset
-- 1x PCB Holder
-- 1x Tang Potong
-- 1x Linux Komputer
+- [1x Solder](https://s.shopee.co.id/60Dj735rdw)
+- [1x Obeng Kecil](https://s.shopee.co.id/5fasiUem6q)
+- [1x Avo Meter](https://s.shopee.co.id/60Dj79PVWe)
+- [1x Pinset](https://s.shopee.co.id/7V2Wu1YZIR)
+- [1x PCB Holder](https://s.shopee.co.id/wVyJQNrr)
+- [1x Tang Potong](https://s.shopee.co.id/7fLx6R0JAs)
+- [1x Linux Komputer](https://s.shopee.co.id/3fpoLJ155m)
 
 ### Bahan
-- Timah Solder
-- Flux/ Pasta Solder
-- 1 Meter Kabel AWG 30
-- 30x Baut Flat Head M2x6
-- 9x Insert Knur/ Mur Tanam M2x3
-- 1x TP4056 + Stepup
-- 1x USB Type-C Breakout Board
-- 1x Micro USB HUB 2 Port 1 Charging Port
-- 1x Mini Saklar
-- 1x Baterai Polimer
-- 1x Baterai Level Indikator
-- 1x Bluetooth Keyboard
-- 1x Resistor 1K Ω
-- 1x MicroSD 32GB
-- 1x Lem Araldite
-- 1x Glue Gun
-- 1x Xiaomi Redmi 2 Prime
+- [Timah Solder](https://s.shopee.co.id/4q1ljUhofo)
+- [Flux/ Pasta Solder](https://s.shopee.co.id/7pfNJ4Lyq9)
+- [1 Meter Kabel AWG 30](https://s.shopee.co.id/9pQRgyw0Ah)
+- [30x Baut Flat Head M2x6](https://s.shopee.co.id/6pmq7XVeg4)
+- [9x Insert Knur/ Mur Tanam M2x3](https://s.shopee.co.id/3VWO9TTfRL)
+- [1x TP4056 + Stepup](https://s.shopee.co.id/7Kj6ibDT0l)
+- [1x USB Type-C Breakout Board](https://s.shopee.co.id/9f71UwKUR0)
+- [1x Micro USB HUB 2 Port 1 Charging Port](https://s.shopee.co.id/1g4jyMYn0m)
+- [1x Mini Saklar](https://s.shopee.co.id/3AtXlAsGWm)
+- [1x Baterai Polimer](https://s.shopee.co.id/9pQRi9ncPN)
+- [1x Baterai Level Indikator](https://s.shopee.co.id/9AAkv68Wnd)
+- [1x Bluetooth Keyboard](https://s.shopee.co.id/9KUB7YdjMu)
+- [1x Resistor 1K Ω](https://s.shopee.co.id/30a7ZyZYIW)
+- [1x MicroSD 32GB](https://s.shopee.co.id/2B10aVomzX)
+- [1x Lem Araldite](https://s.shopee.co.id/3q9EZdu1nQ)
+- [1x Glue Gun](https://s.shopee.co.id/5VHSYlcr5i)
+- [1x Xiaomi Redmi 2 Prime](https://s.shopee.co.id/4L5VAmCNT7)
 
 ## Diagram Pengkabelan
 HaPlay GO Zero 1 di rakit menggunakan modul elektronika yang sederhana, yang pada intinya, modul-modul tersebut hanya bekerja untuk menangani daya.
