@@ -103,7 +103,7 @@ Lem Araldite di gunakan untuk menutup lubang indikator baterai, lubang indikator
 
 ![HaPlay GO Zero 1](HaPlay_GO_Zero_1-led_indikator.jpg)
 
-Karena sifat lem Araldite yang transparan, ini membuat lampu indikator tetap terlihat.
+Karena sifat lem Araldite yang transparan, ini membuat lampu indikator tetap terlihat terang.
 
 Sedangkan lem bakar, digunakan untuk merekatkan kabel bagian dalam setelah dirakit agar lebih rapi.
 
