@@ -79,9 +79,9 @@ HaPlay GO Zero 1 menggunakan keyboard bluetooth tanpa dongle yang dimodifikasi a
 Modifikasi keyboard diadopsi dari proyek [Decktility](https://github.com/ByteWelder/Decktility) oleh [Byte Welder](https://github.com/ByteWelder). Lihat modifikasinya disini: [Decktility Keyboard Mod](https://github.com/ByteWelder/Decktility/blob/main/docs/assembling.md#keyboard-mod)
 
 ## Keyboard Remaping
-HaPlay GO Zero 1 menggunakan keyboard yang tidak memiliki tombol ```TAB``` khusus, dimana tombol ```TAB``` ini sangat penting untuk mengoperasikan sistem operasi Linux yang digunakan pada HaPlay GO Zero 1, terutama bagi pengguna perintah baris.
+HaPlay GO Zero 1 menggunakan keyboard yang tidak memiliki tombol `TAB` khusus, dimana tombol `TAB` ini sangat penting untuk mengoperasikan sistem operasi Linux yang digunakan pada HaPlay GO Zero 1, terutama bagi pengguna perintah baris.
 
-Karena itulah, HaPlay GO Zero 1 melakukan remap keyboard dengan merubah fungsi ```Caps Lock``` menjadi fungsi ```TAB```.
+Karena itulah, HaPlay GO Zero 1 melakukan remap keyboard dengan merubah fungsi `Caps Lock` menjadi fungsi `TAB`.
 
 Keyboard remap ini diadopsi dari proyek [Micro 2](https://yarh.io/yarh-io-m2.html) oleh [YARH IO](https://yarh.io).
 
@@ -118,24 +118,30 @@ Pada proses ini diperlukan sebuah komputer Linux dan pengetahuan mendalam tentan
 ### Pembentukan PostmarketOS
 Dari terminal emulator, pasang program pembentuk image PostmarketOS dengan perintah:
 
-`~$ sudo apt install pmbootstrap android-tools-fastboot`
+```
+~$ sudo apt install pmbootstrap android-tools-fastboot
+```
 
 Kemudian inisialisasi perangkat dengan perintah:
 
-`~$ pmbootstrap init`
+```
+~$ pmbootstrap init
+```
 
 Isi beberapa nilai seperti ini:
 * **Versi**: v24.06
 * **Brand**: Xiaomi
 * **Model**: wt88047
 * **GUI**: none
-* **Paket Extra**: nano,networkmanager,networkmanager-tui,networkmanager-wifi,networkmanager-wwan
+* **Paket Extra**: nano,networkmanager,networkmanager-tui,networkmanager-wifi,networkmanager-wwan,hidapi
 * **Username**: haplay
 * **Host**: go-zero
 
 Setelah initialisasi, bentuk semua paket menjadi image siap pasang dengan perintah:
 
-`~$ pmbootstrap install`
+```
+~$ pmbootstrap install
+```
 
 * Masukan sandi sudo pada permintaan pertama.
 * Masukan sandi baru untuk user *haplay* pada permintaan kedua.
@@ -149,25 +155,35 @@ Masuk ke mode fastboot dengan menekan tombol kombinasi Volume (-) dan tombol Pow
 
 Beralih ke komputer, periksa status hubungan dengan perintah:
 
-`~$ fastboot devices`
+```
+~$ fastboot devices
+```
 
 Jika umpan balik tidak kosong, lanjutkan dengan menjalankan perintah:
 
-`~$ pmbootstrap flasher flash_lk2nd`
+```
+~$ pmbootstrap flasher flash_lk2nd
+```
 
 Kemudian restart smartphone:
 
-`~$ fastboot reboot`
+```
+~$ fastboot reboot
+```
 
 Saat restart, smartphone akan bergetar dua kali dengan jeda pendek. Tekan tombol volume (-) setelah getar pertama untuk masuk ke mode fastboot LK2ND.
 
 Dari mode fastboot LK2ND, dan smartphone masih terhubung ke komputer, jalankan perintah pemasangan PostmarketOS Linux:
 
-`~$ pmbootstrap flasher flash_rootfs --partition system`
+```
+~$ pmbootstrap flasher flash_rootfs --partition system
+```
 
 Kemudian restart smartphone dan biarkan masuk ke sistem.
 
-`~$ fastboot reboot`
+```
+~$ fastboot reboot
+```
 
 ### Menyiapkan Sistem Operasi
 Setelah smartphone berhasil menjalankan PostmarketOS Linux dalam mode teks, login dengan informasi yang diatur sebelumnya saat pembentukan image.
@@ -177,11 +193,15 @@ Setelah smartphone berhasil menjalankan PostmarketOS Linux dalam mode teks, logi
 
 Kemudian login sebagai root:
 
-`~$ sudo su`
+```
+~$ sudo su
+```
 
 Atur agar **Network Manager** berjalan saat boot:
 
-`~# rc-update add networkmanager default`
+```
+~# rc-update add networkmanager default
+```
 
 ### Menyiapkan Partisi
 **!!! PERINGATAN !!!**
@@ -192,17 +212,23 @@ Pada langkah ini, kita akan menggabung MicroSD sebagai partisi sistem dan mengat
 
 Periksa daftar partisi yang ada:
 
-`~# parted -l`
+```
+~# parted -l
+```
 
 Temukan partisi dengan nama `userdata` lalu catat nomor di depannya. Katakanlah partisi tersebut bernomor **30**.
 
 Format partisi *userdata*:
 
-`~# mkfs.ext4 -L USRFS /dev/mmcblk0p30`
+```
+~# mkfs.ext4 -L USRFS /dev/mmcblk0p30
+```
 
 Format MicroSD:
 
-`~# mkfs.ext4 -L HOMEFS /dev/mmcblk1p1`
+```
+~# mkfs.ext4 -L HOMEFS /dev/mmcblk1p1
+```
 
 Mount partisi **userdata** dan MicroSD:
 
@@ -215,19 +241,27 @@ Mount partisi **userdata** dan MicroSD:
 
 Salin semua berkas dari direktori `/usr` kedalam partisi **userdata**:
 
-`~# cp -av /usr/* /mnt/usrfs/`
+```
+~# cp -av /usr/* /mnt/usrfs/
+```
 
 Salin semua berkas dari direktori `/home` kedalam MicroSD:
 
-`~# cp -av /home/* /mnt/homefs/`
+```
+~# cp -av /home/* /mnt/homefs/
+```
 
 Buat raw disk image sebesar 10GB di dalam MicroSD:
 
-`~# dd if=/dev/zero of=/mnt/homefs/varfs bs=1MB count=10000`
+```
+~# dd if=/dev/zero of=/mnt/homefs/varfs bs=1MB count=10000
+```
 
 Format raw disk image **varfs** yang baru dibuat:
 
-`~# mkfs.ext4 -L VARFS /mnt/homefs/varfs`
+```
+~# mkfs.ext4 -L VARFS /mnt/homefs/varfs
+```
 
 Mount disk image **varfs** lalu salin isi direktori `/var` kedalamnya:
 
@@ -239,7 +273,9 @@ Mount disk image **varfs** lalu salin isi direktori `/var` kedalamnya:
 
 Edit file `/etc/fstab`:
 
-`~# nano /etc/fstab`
+```
+~# nano /etc/fstab
+```
 
 Lalu tambah baris seperti ini:
 
@@ -251,11 +287,15 @@ Lalu tambah baris seperti ini:
 
 Simpan dengan menekan tombol `CTRL` + `O` lalu `CTRL` + `X` dan restart.
 
-`~# reboot`
+```
+~# reboot
+```
 
 Setelah menyala kembali, login lalu jalankan perintah:
 
-`~$ df -h`
+```
+~$ df -h
+```
 
 Jika pada umpan baliknya kamu melihat `/dev/loopxx` di awal baris bawah, maka pengaturan yang dilakukan telah berhasil dan saatnya untuk memasang lingkungan desktop.
 
@@ -266,11 +306,15 @@ Jadi, sekarang, HaPlay GO Zero 1 mengganti default desktopnya dengan XFCE4.
 
 Hubungkan HaPlay GO Zero 1 ke jaringan:
 
-`~$ sudo nmtui-connect`
+```
+~$ sudo nmtui-connect
+```
 
 Update dan upgrade paket dulu:
 
-`~$ sudo apk update && sudo apk upgrade`
+```
+~$ sudo apk update && sudo apk upgrade
+```
 
 Install XFCE4:
 
@@ -284,7 +328,9 @@ network-manager-applet
 
 Atur rotasi layar dengan perintah:
 
-`~$ sudo nano /etc/udev/rules.d/98-touchscreen-cal.rules`
+```
+~$ sudo nano /etc/udev/rules.d/98-touchscreen-cal.rules
+```
 
 Lalu tulis parameter ini didalamnya:
 
@@ -292,11 +338,35 @@ Lalu tulis parameter ini didalamnya:
 ATTRS{name}=="generic ft5x06 (8d)", ENV{LIBINPUT_CALIBRATION_MATRIX}="0 1 0 -1 0 1"
 ```
 
-Setelah pemasangan desktop XFCE4, bersihkan cache lalu restart.
+Atur device daemon ke layanan **udev**:
 
-`~$ sudo apk cache clean && reboot`
+```
+~$ sudo setup-devd udev
+```
 
-Terakhir, buka **Pengaturan** -> **Layar** dan ubah rotasi layar ke **Kanan**, simpan, dan selesai.
+Masukan *haplay* ke dalam *gup* `plugdev`:
+
+```
+~$ sudo adduser haplay plugdev
+```
+
+Masukan modul *uhid* ke kernel load:
+
+```
+~$ sudo echo "uhid" >> /etc/modules
+```
+
+Bersihkan cache lalu restart.
+
+```
+~$ sudo apk cache clean && reboot
+```
+
+Terakhir, buka **Pengaturan** -> **Layar** dan ubah rotasi layar ke **Kanan**, simpan.
+
+Buka **Pengaturan** -> **Bluetooth** -> lalu ketuk tombol `+`, tekan menggunakan SIM Card Ejector pada lubang di sebelah lampu keyboard hingga lampu biru berkedip.
+
+Kemudian pada jendela Bluetooth, pilih **Keyboard**, lalu ketuk lanjutkan untuk menghubungkan keyboard, dan selesai.
 
 # Beli HaPlay GO Zero 1
 Jika proses merakit HaPlay GO Zero 1 terasa rumit, kamu bisa membelinya langsung dari [DHOCNET Store](https://dhocnet.work/search?label=Produk) atau [DHOCNET Store Tokopedia](https://tokopedia.com/dhocnet).
