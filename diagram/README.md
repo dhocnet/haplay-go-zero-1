@@ -87,7 +87,7 @@ Keyboard remap ini diadopsi dari proyek [Micro 2](https://yarh.io/yarh-io-m2.htm
 
 ## Casing
 
-![HaPlay GO Zero 1 Case](HaPlay_GO_Zero_1-Case.jpg)
+![HaPlay GO Zero 1 Case](HaPlay_GO_Zero_1-case.jpg)
 
 Casing HaPlay GO Zero 1 dicetak melalui jasa print 3D online yang banyak tersedia di platform online shop dengan pengaturan sebagai berikut:
 
@@ -102,6 +102,8 @@ Casing HaPlay GO Zero 1 dicetak melalui jasa print 3D online yang banyak tersedi
 Lem Araldite di gunakan untuk menutup lubang indikator baterai, lubang indikator keyboard, dan lubang indikator charging.
 
 ![HaPlay GO Zero 1](HaPlay_GO_Zero_1-led_indikator.jpg)
+
+Karena sifat lem Araldite yang transparan, ini membuat lampu indikator tetap terlihat.
 
 Sedangkan lem bakar, digunakan untuk merekatkan kabel bagian dalam setelah dirakit agar lebih rapi.
 
