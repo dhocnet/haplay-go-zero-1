@@ -43,7 +43,7 @@ Pengerjaan HaPlay GO Zero 1 memerlukan persiapan dan bahan sebagai berikut.
 
 *PROSES PERAKITAN HAPLAY GO ZERO MODEL 1 INI MELIBATKAN PENGGUNAAN BATERAI POLIMER YANG BERESIKO TINGGI DAN MEMERLUKAN PENANGANAN KHUSUS. JIKA TERJADI KESALAHAN KONTAK ATAU TEKANAN FISIK YANG TIDAK DISENGAJA DAPAT MENYEBABKAN BATERAI TERBAKAR ATAU MELEDAK.*
 
-=======================================================
+==============================================
 
 HaPlay GO Zero 1 di rakit menggunakan modul elektronika yang sederhana, yang pada intinya, modul-modul tersebut hanya bekerja untuk menangani daya.
 
@@ -94,6 +94,13 @@ Casing HaPlay GO Zero 1 dicetak melalui jasa print 3D online yang banyak tersedi
 [Download disain 3D](../stl)
 
 - CATATAN: Terdapat cacat pada disain 3D yang saya buat. Yaitu, lubang jack 3.5mm untuk output audio tidak simetris. Jika ingin menggunakannya, kamu bisa perbaiki ini sebelum dicetak.
+
+### Kegunaan Lem Araldite dan Lem Bakar (Glue Gun)
+Lem Araldite di gunakan untuk menutup lubang indikator baterai, lubang indikator keyboard, dan lubang indikator charging.
+
+![HaPlay GO Zero 1](HaPlay_GO_Zero_1-led_indikator.jpg)
+
+Sedangkan lem bakar, digunakan untuk merekatkan kabel bagian dalam setelah dirakit agar lebih rapi.
 
 ## Menyiapkan Sistem Operasi
 HaPlay GO Zero 1 menggunakan sistem operasi [PostmarketOS Linux](https://postmarketos.org) sebagai pengganti [Android OS](https://android.com) dengan konfigurasi dan pemasangan khusus.
