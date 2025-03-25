@@ -296,7 +296,7 @@ Setelah pemasangan desktop XFCE4, bersihkan cache lalu restart.
 
 `~$ sudo apk cache clean && reboot`
 
-Terakhir, buka **Pengaturan** -> **Layar** dan ubah rotasi layar ke **Kanan**, dan selesai.
+Terakhir, buka **Pengaturan** -> **Layar** dan ubah rotasi layar ke **Kanan**, simpan, dan selesai.
 
 # Beli HaPlay GO Zero 1
 Jika proses merakit HaPlay GO Zero 1 terasa rumit, kamu bisa membelinya langsung dari [DHOCNET Store](https://dhocnet.work/search?label=Produk) atau [DHOCNET Store Tokopedia](https://tokopedia.com/dhocnet).
