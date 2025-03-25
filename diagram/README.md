@@ -37,6 +37,14 @@ Pengerjaan HaPlay GO Zero 1 memerlukan persiapan dan bahan sebagai berikut.
 - [1x Xiaomi Redmi 2 Prime](https://s.shopee.co.id/4L5VAmCNT7)
 
 ## Diagram Pengkabelan
+![PERINGATAN BAHAYA](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Achtung.svg/274px-Achtung.svg.png)
+
+**!!! PERINGATAN !!!**
+
+*PROSES PERAKITAN HAPLAY GO ZERO MODEL 1 INI MELIBATKAN PENGGUNAAN BATERAI POLIMER YANG BERESIKO TINGGI DAN MEMERLUKAN PENANGANAN KHUSUS. JIKA TERJADI KESALAHAN KONTAK ATAU TEKANAN FISIK YANG TIDAK DISENGAJA DAPAT MENYEBABKAN BATERAI TERBAKAR ATAU MELEDAK.*
+
+=======================================================
+
 HaPlay GO Zero 1 di rakit menggunakan modul elektronika yang sederhana, yang pada intinya, modul-modul tersebut hanya bekerja untuk menangani daya.
 
 Berikut ini adalah diagram jalur pengkabelan HaPlay GO Zero 1.
@@ -262,9 +270,21 @@ udiskie udisks2 xarchiver 7zip \
 network-manager-applet
 ```
 
+Atur rotasi layar dengan perintah:
+
+`~$ sudo nano /etc/udev/rules.d/98-touchscreen-cal.rules`
+
+Lalu tulis parameter ini didalamnya:
+
+```
+ATTRS{name}=="generic ft5x06 (8d)", ENV{LIBINPUT_CALIBRATION_MATRIX}="0 1 0 -1 0 1"
+```
+
 Setelah pemasangan desktop XFCE4, bersihkan cache lalu restart.
 
 `~$ sudo apk cache clean && reboot`
+
+Terakhir, buka **Pengaturan** -> **Layar** dan ubah rotasi layar ke **Kanan**, dan selesai.
 
 # Beli HaPlay GO Zero 1
 Jika proses merakit HaPlay GO Zero 1 terasa rumit, kamu bisa membelinya langsung dari [DHOCNET Store](https://dhocnet.work/search?label=Produk) atau [DHOCNET Store Tokopedia](https://tokopedia.com/dhocnet).
