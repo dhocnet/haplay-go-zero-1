@@ -119,7 +119,7 @@ Pada proses ini diperlukan sebuah komputer Linux dan pengetahuan mendalam tentan
 Dari terminal emulator, pasang program pembentuk image PostmarketOS dengan perintah:
 
 ```
-~$ sudo apt install pmbootstrap android-tools-fastboot
+~$ sudo apt install pmbootstrap fastboot
 ```
 
 Kemudian inisialisasi perangkat dengan perintah:
