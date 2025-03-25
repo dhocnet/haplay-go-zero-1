@@ -49,7 +49,7 @@ HaPlay GO Zero 1 di rakit menggunakan modul elektronika yang sederhana, yang pad
 
 Berikut ini adalah diagram jalur pengkabelan HaPlay GO Zero 1.
 
-![Diagram HaPlay GO Zero 1](./HaPlay_GO_Zero_1-diagram.png)
+![Diagram HaPlay GO Zero 1](./HaPlay_GO_Zero_1-diagram_pengkabelan.png)
 
 Setelah dirakit, panel bagian depan terlihat seperti ini.
 
