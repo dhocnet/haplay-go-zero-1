@@ -257,7 +257,7 @@ Setelah menyala kembali, login lalu jalankan perintah:
 
 `~$ df -h`
 
-Jika pada umpan baliknya kamu melihat dua `loop` di awal baris bawah, maka pengaturan yang dilakukan telah berhasil dan saatnya untuk memasang lingkungan desktop.
+Jika pada umpan baliknya kamu melihat `/dev/loopxx` di awal baris bawah, maka pengaturan yang dilakukan telah berhasil dan saatnya untuk memasang lingkungan desktop.
 
 ### Memasang Lingkungan Desktop GUI
 Setelah semua pengaturan berjalan dengan baik, selanjutnya adalah memasang lingkungan desktop. Pada HaPlay GO Zero 1, awalnya, desktop yang digunakan adalah KDE Plasma Desktop. Namun karena KDE Plasma Desktop mengalami lag meski cukup lancar, namun hal tersebut membuat kesan jika HaPlay GO Zero 1 lambat saat dioperasikan.
