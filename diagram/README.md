@@ -86,6 +86,9 @@ Karena itulah, HaPlay GO Zero 1 melakukan remap keyboard dengan merubah fungsi `
 Keyboard remap ini diadopsi dari proyek [Micro 2](https://yarh.io/yarh-io-m2.html) oleh [YARH IO](https://yarh.io).
 
 ## Casing
+
+![HaPlay GO Zero 1 Case](HaPlay_GO_Zero_1-Case.jpg)
+
 Casing HaPlay GO Zero 1 dicetak melalui jasa print 3D online yang banyak tersedia di platform online shop dengan pengaturan sebagai berikut:
 
 - Layer 0.2
