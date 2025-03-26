@@ -151,7 +151,7 @@ Dengan konfigurasi ini, image PostmarketOS yang dihasilkan akan berukuran sangat
 ### Instalasi PostmarketOS Linux
 * **CATATAN**: *Untuk kelancaran pemasangan sistem operasi PostmarketOS Linux, diperlukan pengetahuan yang cukup mendalam mengenai flashing pada smartphone Android.*
 
-Masuk ke mode fastboot dengan menekan tombol kombinasi Volume (-) dan tombol Power secara bersamaan. Kemudian hubungkan smartphone ke komputer melalui kabel data USB.
+Masuk ke mode fastboot dengan menekan tombol kombinasi Volume `-` dan tombol Power secara bersamaan. Kemudian hubungkan smartphone ke komputer melalui kabel data USB.
 
 Beralih ke komputer, periksa status hubungan dengan perintah:
 
@@ -171,7 +171,7 @@ Kemudian restart smartphone:
 ~$ fastboot reboot
 ```
 
-Saat restart, smartphone akan bergetar dua kali dengan jeda pendek. Tekan tombol volume (-) setelah getar pertama untuk masuk ke mode fastboot LK2ND.
+Saat restart, smartphone akan bergetar dua kali dengan jeda pendek. Tekan tombol volume `-` setelah getar pertama untuk masuk ke mode fastboot LK2ND.
 
 Dari mode fastboot LK2ND, dan smartphone masih terhubung ke komputer, jalankan perintah pemasangan PostmarketOS Linux:
 
@@ -230,7 +230,7 @@ Format MicroSD:
 ~# mkfs.ext4 -L HOMEFS /dev/mmcblk1p1
 ```
 
-Mount partisi **userdata** dan MicroSD:
+Mount partisi **userdata** dan **MicroSD**:
 
 ~~~
 ~# mkdir /mnt/usrfs
@@ -344,7 +344,7 @@ Atur device daemon ke layanan **udev**:
 ~$ sudo setup-devd udev
 ```
 
-Masukan *haplay* ke dalam *gup* `plugdev`:
+Masukan *haplay* ke dalam *grup* `plugdev`:
 
 ```
 ~$ sudo adduser haplay plugdev
