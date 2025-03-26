@@ -43,7 +43,7 @@ Pengerjaan HaPlay GO Zero 1 memerlukan persiapan dan bahan sebagai berikut.
 
 *PROSES PERAKITAN HAPLAY GO ZERO MODEL 1 INI MELIBATKAN PENGGUNAAN BATERAI POLIMER YANG BERESIKO TINGGI DAN MEMERLUKAN PENANGANAN KHUSUS. JIKA TERJADI KESALAHAN KONTAK ATAU TEKANAN FISIK YANG TIDAK DISENGAJA DAPAT MENYEBABKAN BATERAI TERBAKAR ATAU MELEDAK.*
 
-==============================================
+___
 
 HaPlay GO Zero 1 di rakit menggunakan modul elektronika yang sederhana, yang pada intinya, modul-modul tersebut hanya bekerja untuk menangani daya.
 
