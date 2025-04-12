@@ -22,6 +22,6 @@ Atau dengan kata lain, HaPlay GO Zero 1 adalah sebuah komputer pribadi, namun uk
 Kalian bisa membuatnya sendiri jika ingin. Lihat caranya di [Cara Merakit HaPlay GO Zero 1](diagram/README.md).
 
 ## Dimana Membelinya?
-HaPlay GO Zero 1 bisa dibeli dari situs [DHOCNET Store](https://dhocnet.work/search/label/Produk) atau melalui jasa Rekening Bersama Tokopedia di [DHOCNET Store Tokopedia](https://tokopedia.com/dhocnet) dengan tambahan beban biaya transaksi sebesar 12%.
+HaPlay GO Zero 1 bisa dibeli dari situs [DHOCNET Store](https://dhocnet.work/search/label/Produk) atau melalui jasa Rekening Bersama Tokopedia di [DHOCNET Store Tokopedia](https://tokopedia.com/dhocnet) dengan tambahan beban biaya transaksi sebesar 4,25%.
 
 Dengan membeli HaPlay GO Zero 1 dari toko tersebut, kalian telah turut berpartisipasi dalam pengembangan proyek [HaPlay Computer](https://dhocnet.work/p/haplay.html) lebih lanjut, dan juga turut berpartisipasi mengurangi sampah elektronik konsumen.
