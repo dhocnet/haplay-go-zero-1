@@ -235,7 +235,7 @@ Mount partisi **userdata** dan **MicroSD**:
 ~~~
 ~# mkdir /mnt/usrfs
 ~# mkdir /mnt/homefs
-~# mount /dev/mmvblk0p30 /mnt/usrfs
+~# mount /dev/mmcblk0p30 /mnt/usrfs
 ~# mount /dev/mmcblk1p1 /mnt/homefs
 ~~~
 
