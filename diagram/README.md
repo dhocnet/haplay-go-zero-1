@@ -133,7 +133,7 @@ Isi beberapa nilai seperti ini:
 * **Brand**: Xiaomi
 * **Model**: wt88047
 * **GUI**: none
-* **Paket Extra**: nano,networkmanager,networkmanager-tui,networkmanager-wifi,networkmanager-wwan,hidapi
+* **Paket Extra**: nano,wpa_supplicant,networkmanager,networkmanager-tui,networkmanager-wifi,networkmanager-wwan,hidapi
 * **Username**: haplay
 * **Host**: go-zero
 
@@ -323,7 +323,8 @@ Install XFCE4:
 xfce4-notifyd xfce4-pulseaudio-plugin \
 xfce4-terminal thunar pavucontrol gvfs \
 udiskie udisks2 xarchiver 7zip \
-network-manager-applet
+network-manager-applet \
+blueman
 ```
 
 Atur rotasi layar dengan perintah:
