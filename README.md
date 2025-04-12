@@ -5,7 +5,7 @@
 Sebuah komputer poket buatan sendiri dari smartphone yang berfungsi penuh dengan sistem operasi [PostmarketOS](https://postmarketos.org), dua port USB 2.0 dan keyboard fisik yang dikemas dalam casing plastik 3D print berbahan ABS.
 
 ## Untuk Apa Ini?
-Berpartisipasi dalam proyek _Reuse & Recycle_ elektronik konsumen yang tidak digunakan lagi sebagai produk baru agar kembali produktif.
+Berpartisipasi dalam proyek _Reuse, Reduce & Recycle_ elektronik konsumen yang tidak digunakan lagi sebagai produk baru agar kembali produktif.
 
 ## Apa Produktifnya?
 HaPlay GO Zero 1 merupakan sebuah komputer Linux yang bekerja tanpa emulasi. Artinya, sistem operasi Linux, benar-benar berjalan langsung diatas mesin tanpa virtualisasi maupun *chroot* dari Android.
