@@ -374,4 +374,4 @@ Jika proses merakit HaPlay GO Zero 1 terasa rumit, kamu bisa membelinya langsung
 
 Dengan membeli produk [HaPlay Computer](https://dhocnet.work/p/haplay.html), berarti kamu telah membantu tim kecil kami mendapat dana untuk biaya pengembangan dan sekaligus kamu juga telah turut berpartisipasi dalam proyek *Reuse & Recycle* untuk menggunakan elektronik konsumen lebih lama guna mengurangi bertambahnya sampah elektronik, terutama yang berjenis smartphone.
 
-- CATATAN: Pembelian melalui Tokopedia dikenakan biaya layanan sebesar 12% dari harga barang.
+- CATATAN: Pembelian melalui Tokopedia dikenakan biaya layanan sebesar 4,25% dari harga barang.
