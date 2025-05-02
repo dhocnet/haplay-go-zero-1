@@ -113,6 +113,7 @@ HaPlay GO Zero 1 menggunakan sistem operasi [PostmarketOS Linux](https://postmar
 Pada proses ini diperlukan sebuah komputer Linux dan pengetahuan mendalam tentang sistem operasi Linux dan management disk agar tidak terjadi masalah.
 
 > **INFO**: *Saya menggunakan sistem operasi Debian Linux untuk membangun image PostmarketOS Linux. Jika Kamu menggunakan distro berbeda, silahkan disesuaikan*
+
 > **CATATAN**: *Pemasangan PostmarketOS Linux pada HaPlay GO Zero 1 dilakukan sebelum semua bagian di rakit.*
 
 ### Pembentukan PostmarketOS
