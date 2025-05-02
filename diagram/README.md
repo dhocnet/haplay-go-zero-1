@@ -6,7 +6,7 @@ Juga, sedikit keahlian dalam menggunakan sistem operasi Linux sangat diperlukan 
 ## Persiapan dan Bahan
 Pengerjaan HaPlay GO Zero 1 memerlukan persiapan dan bahan sebagai berikut.
 
-* **INFO**: *Setiap pembelian yang kamu lakukan melalui link di bawah ini, kami akan mendapat sedikit, sangat sedikit komisi yang akan digunakan untuk biaya pengembangan selanjutnya.*
+> **INFO**: *Setiap pembelian yang kamu lakukan melalui link di bawah ini, kami akan mendapat sedikit, sangat sedikit komisi yang akan digunakan untuk biaya pengembangan selanjutnya.*
 
 ### Peralatan
 - [1x Solder](https://s.shopee.co.id/60Dj735rdw)
@@ -37,11 +37,11 @@ Pengerjaan HaPlay GO Zero 1 memerlukan persiapan dan bahan sebagai berikut.
 - [1x Xiaomi Redmi 2 Prime](https://s.shopee.co.id/4L5VAmCNT7)
 
 ## Diagram Pengkabelan
-![PERINGATAN BAHAYA](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Achtung.svg/274px-Achtung.svg.png)
+> ![PERINGATAN BAHAYA](https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Achtung.svg/274px-Achtung.svg.png)
 
-**!!! PERINGATAN !!!**
+> **!!! PERINGATAN !!!**
 
-*PROSES PERAKITAN HAPLAY GO ZERO MODEL 1 INI MELIBATKAN PENGGUNAAN BATERAI POLIMER YANG BERESIKO TINGGI DAN MEMERLUKAN PENANGANAN KHUSUS. JIKA TERJADI KESALAHAN KONTAK ATAU TEKANAN FISIK YANG TIDAK DISENGAJA DAPAT MENYEBABKAN BATERAI TERBAKAR ATAU MELEDAK.*
+> *PROSES PERAKITAN HAPLAY GO ZERO MODEL 1 INI MELIBATKAN PENGGUNAAN BATERAI POLIMER YANG BERESIKO TINGGI DAN MEMERLUKAN PENANGANAN KHUSUS. JIKA TERJADI KESALAHAN KONTAK ATAU TEKANAN FISIK YANG TIDAK DISENGAJA DAPAT MENYEBABKAN BATERAI TERBAKAR ATAU MELEDAK.*
 
 ___
 
@@ -96,7 +96,7 @@ Casing HaPlay GO Zero 1 dicetak melalui jasa print 3D online yang banyak tersedi
 
 [Download disain 3D](../stl)
 
-- CATATAN: Terdapat cacat pada disain 3D yang saya buat. Yaitu, lubang jack 3.5mm untuk output audio tidak simetris. Jika ingin menggunakannya, kamu bisa perbaiki ini sebelum dicetak.
+> CATATAN: Terdapat cacat pada disain 3D yang saya buat. Yaitu, lubang jack 3.5mm untuk output audio tidak simetris. Jika ingin menggunakannya, kamu bisa perbaiki ini sebelum dicetak.
 
 ### Kegunaan Lem Araldite dan Lem Bakar (Glue Gun)
 Lem Araldite di gunakan untuk menutup lubang indikator baterai, lubang indikator keyboard, dan lubang indikator charging.
@@ -112,8 +112,8 @@ HaPlay GO Zero 1 menggunakan sistem operasi [PostmarketOS Linux](https://postmar
 
 Pada proses ini diperlukan sebuah komputer Linux dan pengetahuan mendalam tentang sistem operasi Linux dan management disk agar tidak terjadi masalah.
 
-* **INFO**: *Saya menggunakan sistem operasi Debian Linux untuk membangun image PostmarketOS Linux. Jika Kamu menggunakan distro berbeda, silahkan disesuaikan*
-* **CATATAN**: *Pemasangan PostmarketOS Linux pada HaPlay GO Zero 1 dilakukan sebelum semua bagian di rakit.*
+> **INFO**: *Saya menggunakan sistem operasi Debian Linux untuk membangun image PostmarketOS Linux. Jika Kamu menggunakan distro berbeda, silahkan disesuaikan*
+> **CATATAN**: *Pemasangan PostmarketOS Linux pada HaPlay GO Zero 1 dilakukan sebelum semua bagian di rakit.*
 
 ### Pembentukan PostmarketOS
 Dari terminal emulator, pasang program pembentuk image PostmarketOS dengan perintah:
@@ -149,7 +149,7 @@ Setelah initialisasi, bentuk semua paket menjadi image siap pasang dengan perint
 Dengan konfigurasi ini, image PostmarketOS yang dihasilkan akan berukuran sangat kecil. Tidak lebih dari 200MB.
 
 ### Instalasi PostmarketOS Linux
-* **CATATAN**: *Untuk kelancaran pemasangan sistem operasi PostmarketOS Linux, diperlukan pengetahuan yang cukup mendalam mengenai flashing pada smartphone Android.*
+> **CATATAN**: *Untuk kelancaran pemasangan sistem operasi PostmarketOS Linux, diperlukan pengetahuan yang cukup mendalam mengenai flashing pada smartphone Android.*
 
 Masuk ke mode fastboot dengan menekan tombol kombinasi Volume `-` dan tombol Power secara bersamaan. Kemudian hubungkan smartphone ke komputer melalui kabel data USB.
 
@@ -204,9 +204,9 @@ Atur agar **Network Manager** berjalan saat boot:
 ```
 
 ### Menyiapkan Partisi
-**!!! PERINGATAN !!!**
+> **!!! PERINGATAN !!!**
 
-*BERIKUT INI ADALAH LANGKAH YANG PENTING DAN DAPAT MENYEBABKAN KERUSAKAN SOFTWARE JIKA TRRJADI SALAH PROSEDUR*
+> *BERIKUT INI ADALAH LANGKAH YANG PENTING DAN DAPAT MENYEBABKAN KERUSAKAN SOFTWARE JIKA TRRJADI SALAH PROSEDUR*
 
 Pada langkah ini, kita akan menggabung MicroSD sebagai partisi sistem dan mengatur lingkungan desktop. Jadi pastikan jika MicroSD sudah terpasang di tempatnya.
 
@@ -374,4 +374,4 @@ Jika proses merakit HaPlay GO Zero 1 terasa rumit, kamu bisa membelinya langsung
 
 Dengan membeli produk [HaPlay Computer](https://dhocnet.work/p/haplay.html), berarti kamu telah membantu tim kecil kami mendapat dana untuk biaya pengembangan dan sekaligus kamu juga telah turut berpartisipasi dalam proyek *Reuse & Recycle* untuk menggunakan elektronik konsumen lebih lama guna mengurangi bertambahnya sampah elektronik, terutama yang berjenis smartphone.
 
-- CATATAN: Pembelian melalui Tokopedia dikenakan biaya layanan sebesar 4,25% dari harga barang.
+> CATATAN: Pembelian melalui Tokopedia dikenakan biaya layanan sebesar 4,25% dari harga barang.
